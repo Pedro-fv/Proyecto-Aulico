@@ -1,0 +1,494 @@
+body{
+  
+	font-family: Verdana,sans-serif;
+	margin:0
+}
+
+/* form {
+ /*  border: none;
+	padding-top: 10px;
+	padding-left: 500px;
+	padding-right: 500px; 
+} */
+.mensaje {
+  max-width: 400px;
+  
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+}
+.mensaje1 {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+
+.formulario {
+ display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+ max-width: 400px;
+ text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+
+
+.formulario h2{
+  text-align: center;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+  width: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario textarea {
+  resize: vertical; /* Permite redimensionar verticalmente el área de texto */
+}
+
+.formulario input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type=text], input[type=password], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=search]{
+	padding-left: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: block; /* Convertir el botón en un bloque */
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    text-align: center; /* Centrar el texto */
+    border-radius: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.span2{
+  text-align: center;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.container {
+    padding: 16px;
+    text-align: center;
+}
+
+.icon-bar { 
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    text-align: center;
+}
+
+.icon-bar a {
+   display: inline-block;
+    /* float: left; */
+    width: 15%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.icon-bar a:hover {
+    background-color: #4CAF50;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+textarea {
+  width: auto; /* Ancho del textarea al 100% del contenedor */
+  height: 150px; /* Altura del textarea en píxeles */
+  resize: vertical; /* Permitir que el usuario redimensione verticalmente */
+}
+.formu{
+ 
+  padding: auto;
+color:white;
+ 
+}
+.formu h2{
+  text-align: center;
+}
+ .EnviarMensaje{
+  background-color: #555;
+  position: fixed; /* Fija el formulario en una posición en la ventana del navegador */
+    bottom: 0; /* Lo posiciona al final de la ventana */
+    left: 0; /* Lo posiciona a la izquierda de la ventana */
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+  /* Color de fondo opcional */
+    padding: 20px;
+    align-items: center;
+
+ }
+ #formulario-mensaje {
+  display: inline-block; /* Para centrar el formulario horizontalmente */
+}
+
+.EnviarMensaje textarea{
+  color: white;
+  
+  width: 95%;
+  height: 30px; 
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.button-container {
+  text-align: center; 
+  bottom: 5px;
+
+ 
+}
+.enviar-button {
+  
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.enviar-button:hover {
+  background-color: #45a049;
+}
+
+.enviar-button:active {
+  background-color: #3e8e41;
+}
+
+ .contenedor-flex {
+ 
+  position: relative;
+  
+}
+
+ 
+.contenedor-amigos {
+  position: absolute; /* Posicionar absolutamente el contenedor de amigos */
+  right: 2%;
+  width: auto;
+  margin-left: 10px; 
+  text-align: left;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contenedor-amigos h2{
+  text-align: center;
+}
+.contenedor-amigos ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+
+  color: white;
+  background-color: #555;
+  border-radius: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contenedor-amigos li {
+  margin-bottom: 10px; /* Agrega espacio entre cada nombre de usuario */
+}
+
+.contenedor-amigos li a {
+  display: block;
+  padding: 10px;
+  background-color: #555;
+  color: white; /* Color del texto */
+  text-decoration: none;
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+  border-radius: 20px; /* Añade bordes redondeados */
+}
+
+.contenedor-amigos li a:hover {
+  background-color: #555; /* Cambia el color de fondo en el hover */
+}
+
+.contenedor-amigos button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto; /* Margen automático horizontal para centrar */
+  border: none;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.slideshow-container {
+  position: absolute; /* Posiciona absolutamente el contenedor principal */
+  left: 50%; /* Alinea el lado izquierdo del contenedor principal al 50% del contenedor-flex */
+  transform: translateX(-50%);
+  
+  
+ 
+  flex: 1; 
+  margin-right: 10px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow-container div {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  
+ /*  border: 2px solid black; */
+  color: black;
+  margin: 10px;
+  padding: 20px;
+}
+
+.imagen-libro {
+  width: 200px;
+  height: 300px; 
+  object-fit: cover; 
+  margin: 0 auto; 
+}
+
+.slideshow-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+h3 {
+  text-align: center;
+}
+/* .slideshow-container {
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slideshow-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slideshow-container div {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  color: black;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  max-width: 100%; 
+  font-size: 14px; 
+}
+
+
+
+.slideshow-container .comentarios-container {
+  display: block;
+  text-align: center;
+  margin-left:auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+.estrella {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('estrella.png'); /* URL de la imagen de la estrella */
+}
+
+.llena {
+  background-position: 0 0; /* Posición de la estrella llena */
+}
+
+.media {
+  background-position: -20px 0; /* Posición de la media estrella */
+}
+
+.vacia {
+  background-position: -40px 0; /* Posición de la estrella vacía */
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
